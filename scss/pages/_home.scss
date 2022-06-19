@@ -235,6 +235,8 @@ section {
 
 .projects {
   text-align: center;
+}
+.project {
   &__grid {
     text-align: left;
     list-style: none;
@@ -327,7 +329,6 @@ section {
     }
   }
 }
-
 .external-link {
   width: 22px;
   height: 22px;
