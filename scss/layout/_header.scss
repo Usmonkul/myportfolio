@@ -1,0 +1,149 @@
+.header {
+  display: flex;
+  align-items: center;
+  background-color: rgba(10, 25, 47, 0.85);
+  backdrop-filter: blur(10px);
+  transition: $transition;
+  position: fixed;
+  top: 0;
+  padding: 0px 50px;
+  z-index: 11;
+  width: 100%;
+  height: $nav-height;
+  filter: none !important;
+  scroll-behavior: smooth;
+}
+.logo {
+  font-size: 33px;
+  display: block;
+  letter-spacing: 1.5px;
+  color: $green;
+}
+.header__nav {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+.main-nav__list {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  counter-reset: item;
+}
+.main-nav__item {
+  margin: 5px;
+  list-style: none;
+}
+.main-nav__link {
+  padding: 10px;
+  font-size: $fz-xs;
+  font-weight: bolder;
+  line-height: 1.5;
+  color: $slate;
+  transition: $transition;
+  counter-increment: item 1;
+  &:hover {
+    color: $green;
+  }
+  &::before {
+    content: "0" counter(item) ".";
+    margin-right: 5px;
+    color: $green;
+    font-size: $fz-xxs;
+    text-align: right;
+  }
+}
+
+.resume-button {
+  margin-left: 15px;
+}
+
+//left links
+.side__style {
+  width: 40px;
+  position: fixed;
+  bottom: 0px;
+  z-index: 10;
+  color: $lightSlate;
+}
+.left__links {
+  left: 40px;
+  right: auto;
+}
+.right__links {
+  right: 40px;
+  left: auto;
+}
+.socials {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  &::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 90px;
+    margin: 0px auto;
+    background-color: $lightSlate;
+  }
+  &__list__item:last-child {
+    margin-bottom: 20px;
+  }
+  &__link {
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 10px;
+    color: $lightSlate;
+    transition: all 0.2s ease-in;
+    &:hover,
+    &:focus {
+      color: $green;
+      transform: translateY(-5px);
+    }
+  }
+  .feather {
+    width: 20px;
+    height: 20px;
+    fill: none;
+    color: inherit;
+    display: block;
+  }
+}
+.email__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 90px;
+    margin: 0px auto;
+    background-color: $lightSlate;
+  }
+  .email__link {
+    font-size: $fz-xxs;
+    line-height: 18px;
+    letter-spacing: 2px;
+    writing-mode: vertical-rl;
+    display: inline-block;
+    text-decoration: none;
+    margin-bottom: 20px;
+    cursor: pointer;
+    padding: 10px;
+    color: $lightSlate;
+    transition: all 0.2s ease-in;
+    &:hover,
+    &:focus {
+      color: $green;
+      transform: translateY(-5px);
+    }
+  }
+}
