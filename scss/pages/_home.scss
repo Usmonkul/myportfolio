@@ -33,12 +33,13 @@ section {
 }
 .hero {
   min-height: 100vh;
+  height: 100vh;
   &__content {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     position: relative;
-    top: 100px;
+    top: $nav-height;
   }
   &__intro {
     margin: 0px 0px 30px 4px;
