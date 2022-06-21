@@ -21,7 +21,7 @@
         <span class="logo">Usmon</span>
       </div>
       <nav class="header__nav main-nav" aria-label="Main">
-        <ol class="main-nav__list">
+        <ol class="main-nav__list header__nav__list">
           <li
             data-aos="fade-down"
             data-aos-duration="2000"
@@ -63,13 +63,34 @@
       </nav>
       <div class="mobile__nav">
         <div>
-          <button aria-label="Menu" class="ham__btn">
+          <button aria-label="Menu" id="jsHumBtn" class="ham__btn">
             <div class="ham__box">
               <div class="ham__inner"></div>
             </div>
           </button>
         </div>
       </div>
+      <aside id="jsMobileNav" class="mobile__navbar__hidden">
+        <nav class="main-nav mobile__nav1">
+          <ol class="main-nav__list mobile__nav__list">
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">About</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">Education</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">Projects</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">Contact</a>
+            </li>
+          </ol>
+          <div class="resume-wrapper">
+            <a href="#" class="resume-button btn">Resume</a>
+          </div>
+        </nav>
+      </aside>
     </header>
     <!-- Left-Side -->
     <div
@@ -288,7 +309,7 @@
             data-aos="fade-up"
             data-aos-duration="2100"
           >
-            <div class="eduaction__tablist">
+            <div class="education__tablist">
               <button class="education__place__btn">
                 <span>Woosong</span>
               </button>

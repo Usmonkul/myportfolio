@@ -181,6 +181,9 @@ section {
   }
   &__inner {
     display: flex;
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
   }
   &__tablist {
     display: flex;
@@ -189,6 +192,14 @@ section {
     z-index: 3;
     width: max-content;
     list-style: none;
+    @include respond(tab-port) {
+      flex-direction: row;
+      overflow-x: auto;
+      width: calc(100% + 100px);
+      padding-left: 50px;
+      margin-left: -50px;
+      margin-bottom: 30px;
+    }
   }
   &__place__btn {
     cursor: pointer;
@@ -210,6 +221,18 @@ section {
     font-size: $fz-lg;
     text-align: left;
     white-space: nowrap;
+    @include respond(tab-port) {
+      display: flex;
+      -webkit-box-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      align-items: center;
+      min-width: 120px;
+      padding: 0px 15px;
+      border-left: 0px;
+      border-bottom: 2px solid $lightestNavy;
+      text-align: center;
+    }
   }
   &__content {
     position: relative;
