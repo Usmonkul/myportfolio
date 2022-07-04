@@ -32,7 +32,6 @@ section {
   }
 }
 .hero {
-  min-height: 100vh;
   height: 100vh;
   z-index: -1;
   &__content {
@@ -72,6 +71,9 @@ section {
     margin-top: 50px;
     padding: 20px 28px;
   }
+}
+.hero-filter {
+  filter: blur(5px) brightness(0.7);
 }
 //Biography
 

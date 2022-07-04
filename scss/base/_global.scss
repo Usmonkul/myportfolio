@@ -41,7 +41,9 @@ body {
   color: $slate;
   overflow-x: hidden;
 }
-
+.overflow-h {
+  overflow: hidden;
+}
 img {
   max-width: 100%;
   height: auto;
