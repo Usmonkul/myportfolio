@@ -213,15 +213,12 @@
   position: fixed;
   top: 0;
   right: 0;
-  width: 75vw;
+  width: 75%;
   height: 100vh;
   background-color: $lightNavy;
   z-index: 9;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: none;
   transition: $transition;
-  visibility: hidden;
   &__nav {
     padding: 10px;
     width: 100%;
@@ -270,5 +267,7 @@
 }
 
 .mobile-active {
-  visibility: visible;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
