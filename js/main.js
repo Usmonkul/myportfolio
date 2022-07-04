@@ -1,13 +1,9 @@
 "use strict";
 
-const elHamburger = document.querySelector("#jsHumBtn");
-const elNav = document.querySelector("#jsMobileNav");
-
-const hideNav = () => {
-  elNav.classList.toggle("mobile__navbar__active");
-};
-
-elHamburger.addEventListener("click", function (e) {
-  e.preventDefault;
-  elNav.classList.toggle("mobile__navbar__active");
+$(document).ready(() => {
+  $(".menu-btn").on("click", function (e) {
+    e.preventDefault;
+    $(this).toggleClass("menu-btn_active");
+    $("#jsMobileNav").toggleClass("mobile-active");
+  });
 });

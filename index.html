@@ -61,29 +61,25 @@
           >
         </div>
       </nav>
-      <div class="mobile__nav">
-        <div>
-          <button aria-label="Menu" id="jsHumBtn" class="ham__btn">
-            <div class="ham__box">
-              <div class="ham__inner"></div>
-            </div>
-          </button>
-        </div>
-      </div>
-      <aside id="jsMobileNav" class="mobile__navbar__hidden">
-        <nav class="main-nav mobile__nav1">
-          <ol class="main-nav__list mobile__nav__list">
-            <li class="main-nav__item">
-              <a href="#" class="main-nav__link">About</a>
+      <!-- Hamburger button -->
+      <a href="#" class="menu-btn">
+        <span></span>
+      </a>
+      <!-- Mobile nav -->
+      <aside id="jsMobileNav" class="mobile">
+        <nav class="mobile__nav">
+          <ol class="mobile__nav-list">
+            <li class="mobile__nav-item">
+              <a href="#" class="mobile__nav-link">About</a>
             </li>
-            <li class="main-nav__item">
-              <a href="#" class="main-nav__link">Education</a>
+            <li class="mobile__nav-item">
+              <a href="#" class="mobile__nav-link">Education</a>
             </li>
-            <li class="main-nav__item">
-              <a href="#" class="main-nav__link">Projects</a>
+            <li class="mobile__nav-item">
+              <a href="#" class="mobile__nav-link">Projects</a>
             </li>
-            <li class="main-nav__item">
-              <a href="#" class="main-nav__link">Contact</a>
+            <li class="mobile__nav-item">
+              <a href="#" class="mobile__nav-link">Contact</a>
             </li>
           </ol>
           <div class="resume-wrapper">
@@ -92,6 +88,7 @@
         </nav>
       </aside>
     </header>
+
     <!-- Left-Side -->
     <div
       class="side__style left__links"
@@ -1021,7 +1018,12 @@
         </div>
       </footer>
     </div>
-
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="./js/main.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
