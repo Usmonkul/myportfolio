@@ -296,6 +296,10 @@ section {
     @include respond(tab-land) {
       grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     }
+    @include respond(phone) {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
   }
   &__item {
     box-shadow: 0 10px 30px -15px $navy-shadow;
