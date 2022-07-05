@@ -29,6 +29,7 @@ section {
   }
   @include respond(sm-phone) {
     padding: 60px 0px;
+    max-width: 375px;
   }
 }
 .hero {
@@ -40,6 +41,9 @@ section {
     align-items: flex-start;
     position: relative;
     top: $nav-height;
+    @include respond(phone) {
+      max-width: 375px;
+    }
   }
   &__intro {
     margin: 0px 0px 30px 4px;
@@ -93,6 +97,7 @@ section {
     line-height: 26px;
   }
   // &__left {
+
   // }
   &__right {
     width: 80%;
